@@ -1,0 +1,49 @@
+{
+    "coord": {
+        "lon":76.95,
+        "lat":43.25
+    },
+    "weather":[
+        {
+            "id":701,
+            "main":"Mist",
+            "description":"mist",
+            "icon":"50n"
+        },
+        {
+            "id":711,
+            "main":"Smoke",
+            "description":"smoke",
+            "icon":"50n"
+        }
+    ],
+    "base":"stations",
+    "main": {
+        "temp":265.1,
+        "feels_like":265.1,
+        "temp_min":265.1,
+        "temp_max":265.1,
+        "pressure":1021,
+        "humidity":79
+    },
+    "visibility":1100,
+    "wind": {
+        "speed":1,
+        "deg":0
+    },
+    "clouds": {
+        "all":20
+    },
+    "dt":1671561229,
+    "sys": {
+        "type":1,
+        "id":8818,
+        "country":"KZ",
+        "sunrise":1671589256,
+        "sunset":1671621554
+    },
+    "timezone":21600,
+    "id":1526384,
+    "name":"Almaty",
+    "cod":200
+}
