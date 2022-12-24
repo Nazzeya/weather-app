@@ -1,7 +1,11 @@
+<style>
+
+</style>
+
 <div class="container">
   <h1>Weather App</h1>
 </div>
-<div>
+<div [style.background-color]="color">
   <form (ngSubmit)="submit(cityName)">
     <input type="text" name="inputText" [(ngModel)]="cityName" [(ngModel)]="inputText">
     <button class="send_button" (click)="clear()">Send</button>
@@ -9,5 +13,5 @@
 </div>
 <div>
   <p>Город: {{weatherMain?.name}}</p>
-  <p>Температура в кельвинах: {{main?.temp }}</p>
+  <p>Температура в цельсиях: {{main?.temp }}</p>
 </div>

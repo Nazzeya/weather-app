@@ -12,6 +12,7 @@ import { WeatherMain } from './models/weather_main';
 export class AppComponent implements OnInit { 
 
     // for clearing the input entering place
+    public  color = '#aaa'
     inputText!: string;
     clear () {
     this.inputText = '';
@@ -22,7 +23,7 @@ export class AppComponent implements OnInit {
       
     constructor(private httpService: HttpDataService){}
 
-    cityName: string = 'Aktobe';
+    cityName: string = 'Алматы';
     apiKey: string = '2d21aec31d47718b3f24ce5ac37d2af4';
     url: string = 'https://api.openweathermap.org/data/2.5/weather?q=' + this.cityName + '&appid=' + this.apiKey + '&units=metric'
 
@@ -33,7 +34,7 @@ export class AppComponent implements OnInit {
     }
 
     ngOnInit(){
-        this.submit
+        this.submit(this.cityName)
     }
 
 }
