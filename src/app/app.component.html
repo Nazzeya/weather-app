@@ -1,17 +1,35 @@
-<style>
-
-</style>
-
 <div class="container">
-  <h1>Weather App</h1>
-</div>
-<div [style.background-color]="color">
+<div class="submit-city">
   <form (ngSubmit)="submit(cityName)">
-    <input type="text" name="inputText" [(ngModel)]="cityName" [(ngModel)]="inputText">
+    <input type="text" name="inputText" [(ngModel)]="cityName" [(ngModel)]="inputText" placeholder="Enter a city name">
     <button class="send_button" (click)="clear()">Send</button>
   </form>
 </div>
-<div>
-  <p>Город: {{weatherMain?.name}}</p>
-  <p>Температура в цельсиях: {{main?.temp }}</p>
+
+<div class="info">
+  <div class="city-name">
+    <h3>{{weatherMain?.name}}</h3>
+  </div>
+  
+  <div class="temp-main">
+    <p>{{main?.temp }}&deg;</p>
+  </div>
+
+  <div class="weather-description">
+    <ul>
+      <li *ngFor="let weather of weathers">
+        {{weather?.main}}
+      </li>
+    </ul>
+  </div>
+
+  <div class="temp">
+    <div class="max">
+      max {{main?.temp_max}} &deg;
+    </div>
+    <div class="min">
+      min {{main?.temp_min}} &deg;
+    </div>
+  </div>
+</div>
 </div>

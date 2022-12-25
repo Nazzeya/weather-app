@@ -1,0 +1,59 @@
+.container {
+    max-width: 350px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.3);
+    padding-bottom: 30px;
+    margin-top: 50px;
+}
+
+.submit-city {
+    padding-top: 30px;
+    margin-left: 25px;
+}
+
+.submit-city input {
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid;
+    border-color: #fff;
+    height: 30px;
+    width: 200px;
+}
+
+.submit-city input::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.submit-city button {
+    background: transparent;
+    margin-left: 25px;
+    height: 30px;
+    width: 70px;
+    border: none;
+    background-color: #fff;
+    color: #6495ED;
+}
+
+.city-name {
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    margin-top: 30px;
+}
+
+li {
+    list-style: none;
+    color: #fff;
+}
+
+.temp-main {
+    color:#fff;
+    text-align: center;
+    font-size: 40px;
+}
+
+.temp {
+    color:#fff;
+    text-align: center;
+}
+
